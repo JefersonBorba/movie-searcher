@@ -10,3 +10,30 @@
   margin: 5px;
   padding: 10px;
 }
+p{
+  padding: 0;
+  margin: 0;
+}
+ /* width */
+ ::-webkit-scrollbar {
+  
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(53, 0, 53, 0.836);
+  border-radius: 10px;
+} 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  
+  background: rgb(36, 0, 36, 0.836);
+}
