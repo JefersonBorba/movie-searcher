@@ -2,38 +2,65 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: column;   
-    background-color: black;
+    flex-direction: row;   
+    background-color: #121620;
+    justify-content: space-between;
+    align-items: center;
     width: 100vw; 
     height: 100%;
+    
 `;
-export const Categories = styled.div`
+
+export const InnerRightContainer = styled.div`
+    width: 25vw;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
-    color: white;
-    height: 70px;
-    h2:hover{
-        cursor:pointer;
-        color: wheat;
+    h3{
+        color: #b8b9bc;
+        :hover{
+            cursor: pointer;
+        }
     }
 `;
-export const Input = styled.div`
-    display:flex;
+
+export const InnerLeftContainer = styled.div`
+    width: 60vw;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    h2{
+        color: purple;
+        span{
+            color: #a29e91;
+        }
+        :hover{
+            cursor:pointer;
+        }
+    }
     input{
-        height: 30px;
-        margin-bottom: 10px;
-        width: 300px;
+        font-size: 16px;
+        width: 350px;
+        height: 40px;
+        background-color: #1c212e;
+        color: #595d69;
+        border: 0;
+        border-radius: 5px;
     }
-    .fas{
-        color: white;
-        font-size: 30px;
-        margin-left: 10px;
-    }
-    .fas:hover{
-        cursor: pointer;
-        color: wheat;
+`;
+export const Sandwich = styled.div`
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-bars{
+        color: #b8b9bc;
+        font-size: 20px;
+        :hover{
+            cursor: pointer;
+        }
     }
 `;

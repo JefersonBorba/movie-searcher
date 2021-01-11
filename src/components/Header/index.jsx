@@ -1,19 +1,19 @@
 import React from "react";
-import {Container, Categories, Input} from "./style"
+import {Container, InnerLeftContainer, InnerRightContainer, Sandwich} from "./style"
 
 const Header = () => {
-    return <Container>
-        <Categories>
-            <h2>Action</h2>
-            <h2>Drama</h2>
-            <h2>Thriller</h2>
-            <h2>Adventure</h2>
-            <h2>Horror</h2>
-        </Categories>
-        <Input>
-            <input type="text" placeholder="search"/>
-            <i className="fas fa-search"></i>
-        </Input>
+    return <Container >
+        <InnerLeftContainer>
+            <h2>MOVIESEARCHER.<span>COM</span></h2>
+            <input type="text" placeholder="Search for Movies, TV Series, Celebrities &amp; More"/>
+        </InnerLeftContainer>
+        <InnerRightContainer>
+            <h3>Login</h3>
+            <h3>Register</h3>
+            <Sandwich>
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </Sandwich>
+        </InnerRightContainer>
     </Container>;
 }
 
